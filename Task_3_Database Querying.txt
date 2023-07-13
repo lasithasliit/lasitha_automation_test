@@ -1,0 +1,15 @@
+------1---------------------------------
+select *
+from Contacts 
+where email is not null and phone is not null;
+
+------2--------------------------------
+SELECT groupId, COUNT(*) AS userCount
+FROM Users
+GROUP BY groupId;
+
+------3--------------------------------
+select c.customerName, o.orderId, o.orderDate 
+from Customers c
+join Orders o
+where c.id = o.customerid;
